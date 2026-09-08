@@ -1,0 +1,23 @@
+name: Expire Jobs
+
+on:
+  schedule:
+    - cron: "0 20 * * *" # daily at 20:00 UTC (~02:00 BDT)
+  workflow_dispatch: {}
+
+jobs:
+  expire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - name: Expire past-deadline jobs
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
+          GOOGLE_CLIENT_EMAIL: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+        run: npm run expire:jobs
