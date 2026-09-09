@@ -66,7 +66,7 @@ export async function extractJobPosting(params: {
   sourceUrl: string;
 }): Promise<{ data: JobExtraction | null; error: string | null }> {
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.0-flash",
+    model: "gemini-3.6-flash",
     systemInstruction: JOB_EXTRACTION_SYSTEM_PROMPT,
     generationConfig: {
       responseMimeType: "application/json",

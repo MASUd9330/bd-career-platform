@@ -133,7 +133,7 @@ async function processOneEntry(
       sourcePublishedAt: extracted.publishedAt,
       originalHash: contentHash,
       aiGenerated: true,
-      aiModel: "gemini-2.0-flash",
+      aiModel: "gemini-3.6-flash",
       qualityScore: score,
       seoTitle: extraction.seoTitle,
       seoDescription: extraction.metaDescription,
