@@ -1,5 +1,6 @@
 import { SourceAdapter } from "./base";
 import { bangladeshBankAdapter } from "./bangladesh-bank";
+import { duJobsAdapter } from "./du-jobs";
 
 /**
  * Add every new adapter here. The `adapterKey` must match the
@@ -8,9 +9,8 @@ import { bangladeshBankAdapter } from "./bangladesh-bank";
  */
 export const adapterRegistry: Record<string, SourceAdapter> = {
   "bangladesh-bank": bangladeshBankAdapter,
+  "du-jobs": duJobsAdapter,
   // "bpsc": bpscAdapter,
-  // "du": duAdapter,
-  // "railway": railwayAdapter,
 };
 
 export function getAdapter(key: string): SourceAdapter {

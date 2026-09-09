@@ -13,7 +13,8 @@
     "collect": "tsx scripts/crawl.ts",
     "publish:pending": "tsx scripts/publish.ts",
     "expire:jobs": "tsx scripts/expire.ts",
-    "remind:deadlines": "tsx scripts/deadline-reminders.ts"
+    "remind:deadlines": "tsx scripts/deadline-reminders.ts",
+    "seed:sources": "tsx scripts/seed-sources.ts"
   },
   "dependencies": {
     "next": "^15.0.0",
