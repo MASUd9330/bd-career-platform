@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-09-09T01:28:32.812Z",
+  "sourceCount": "1",
+  "orgCount": "1",
+  "rawContentCount": "30",
+  "postsByStatus": [],
+  "recentRawContents": [
+    {
+      "sourceUrl": "https://jobs.du.ac.bd/job_details/314",
+      "fetchedAt": "2026-09-09T01:17:31.356Z",
+      "processed": false,
+      "error": null
+    },
+    {
+      "sourceUrl": "https://jobs.du.ac.bd/job_details/320",
+      "fetchedAt": "2026-09-09T01:17:30.771Z",
+      "processed": false,
+      "error": null
+    },
+    {
+      "sourceUrl": "https://jobs.du.ac.bd/job_details/317",
+      "fetchedAt": "2026-09-09T01:17:29.875Z",
+      "processed": false,
+      "error": null
+    },
+    {
+      "sourceUrl": "https://jobs.du.ac.bd/job_details/319",
+      "fetchedAt": "2026-09-09T01:17:28.977Z",
+      "processed": false,
+      "error": null
+    },
+    {
+      "sourceUrl": "https://jobs.du.ac.bd/job_details/316",
+      "fetchedAt": "2026-09-09T01:17:28.064Z",
+      "processed": false,
+      "error": null
+    },
+    {
+      "sourceUrl": "https://jobs.du.ac.bd/job_details/323",
+      "fetchedAt": "2026-09-09T01:17:26.920Z",
+      "processed": false,
+      "error": null
+    },
+    {
+      "sourceUrl": "https://jobs.du.ac.bd/job_details/322",
+      "fetchedAt": "2026-09-09T01:17:26.352Z",
+      "processed": false,
+      "error": null
+    },
+    {
+      "sourceUrl": "https://jobs.du.ac.bd/job_details/321",
+      "fetchedAt": "2026-09-09T01:17:25.780Z",
+      "processed": false,
+      "error": null
+    },
+    {
+      "sourceUrl": "https://jobs.du.ac.bd/job_details/329",
+      "fetchedAt": "2026-09-09T01:17:25.201Z",
+      "processed": false,
+      "error": null
+    },
+    {
+      "sourceUrl": "https://jobs.du.ac.bd/job_details/328",
+      "fetchedAt": "2026-09-09T01:17:24.620Z",
+      "processed": false,
+      "error": null
+    }
+  ],
+  "recentPosts": []
+}
