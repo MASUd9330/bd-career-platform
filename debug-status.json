@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-09T01:28:32.812Z",
+  "timestamp": "2026-09-09T01:30:34.381Z",
   "sourceCount": "1",
   "orgCount": "1",
   "rawContentCount": "30",
@@ -7,63 +7,63 @@
   "recentRawContents": [
     {
       "sourceUrl": "https://jobs.du.ac.bd/job_details/314",
-      "fetchedAt": "2026-09-09T01:17:31.356Z",
+      "fetchedAt": "2026-09-09T01:30:32.377Z",
       "processed": false,
-      "error": null
+      "error": "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [404 Not Found] This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "sourceUrl": "https://jobs.du.ac.bd/job_details/320",
-      "fetchedAt": "2026-09-09T01:17:30.771Z",
+      "fetchedAt": "2026-09-09T01:30:31.678Z",
       "processed": false,
-      "error": null
+      "error": "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [404 Not Found] This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "sourceUrl": "https://jobs.du.ac.bd/job_details/317",
-      "fetchedAt": "2026-09-09T01:17:29.875Z",
+      "fetchedAt": "2026-09-09T01:30:30.676Z",
       "processed": false,
-      "error": null
+      "error": "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [404 Not Found] This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "sourceUrl": "https://jobs.du.ac.bd/job_details/319",
-      "fetchedAt": "2026-09-09T01:17:28.977Z",
+      "fetchedAt": "2026-09-09T01:30:29.669Z",
       "processed": false,
-      "error": null
+      "error": "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [404 Not Found] This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "sourceUrl": "https://jobs.du.ac.bd/job_details/316",
-      "fetchedAt": "2026-09-09T01:17:28.064Z",
+      "fetchedAt": "2026-09-09T01:30:28.681Z",
       "processed": false,
-      "error": null
+      "error": "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [404 Not Found] This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "sourceUrl": "https://jobs.du.ac.bd/job_details/323",
-      "fetchedAt": "2026-09-09T01:17:26.920Z",
+      "fetchedAt": "2026-09-09T01:30:27.456Z",
       "processed": false,
-      "error": null
+      "error": "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [404 Not Found] This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "sourceUrl": "https://jobs.du.ac.bd/job_details/322",
-      "fetchedAt": "2026-09-09T01:17:26.352Z",
+      "fetchedAt": "2026-09-09T01:30:26.750Z",
       "processed": false,
-      "error": null
+      "error": "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [404 Not Found] This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "sourceUrl": "https://jobs.du.ac.bd/job_details/321",
-      "fetchedAt": "2026-09-09T01:17:25.780Z",
+      "fetchedAt": "2026-09-09T01:30:26.060Z",
       "processed": false,
-      "error": null
+      "error": "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [404 Not Found] This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "sourceUrl": "https://jobs.du.ac.bd/job_details/329",
-      "fetchedAt": "2026-09-09T01:17:25.201Z",
+      "fetchedAt": "2026-09-09T01:30:25.357Z",
       "processed": false,
-      "error": null
+      "error": "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [404 Not Found] This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     },
     {
       "sourceUrl": "https://jobs.du.ac.bd/job_details/328",
-      "fetchedAt": "2026-09-09T01:17:24.620Z",
+      "fetchedAt": "2026-09-09T01:30:24.665Z",
       "processed": false,
-      "error": null
+      "error": "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [404 Not Found] This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API."
     }
   ],
   "recentPosts": []
