@@ -16,23 +16,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [];
 
   for (const type of types) {
-    const [{ count }] = await db
-      .select({ count: db.$count(posts, and(eq(posts.type, type), eq(posts.status, "published"))) })
-      .from(posts)
-      .limit(1)
-      .catch(() => [{ count: 0 }]);
+    const count = await db
+      .$count(posts, and(eq(posts.type, type), eq(posts.status, "published")))
+      .catch(() => 0);
 
     const pageCount = Math.max(1, Math.ceil(count / URLS_PER_SITEMAP));
     for (let page = 1; page <= pageCount; page++) {
       entries.push({
-        url: `${SITE_URL}/sitemaps/${type}/${page}.xml`,
+        url: `${SITE_URL}/sitemaps/${type}/${page}`,
         lastModified: new Date(),
       });
     }
   }
 
   // static/organization sitemap
-  entries.push({ url: `${SITE_URL}/sitemaps/organizations/1.xml`, lastModified: new Date() });
+  entries.push({ url: `${SITE_URL}/sitemaps/organizations/1`, lastModified: new Date() });
 
   return entries;
 }

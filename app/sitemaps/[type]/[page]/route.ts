@@ -15,10 +15,10 @@ const TYPE_TO_PATH: Record<string, string> = {
 
 export async function GET(
   _req: Request,
-  { params }: { params: { type: string; page: string } }
+  { params }: { params: Promise<{ type: string; page: string }> }
 ) {
-  const type = params.type;
-  const page = parseInt(params.page, 10) || 1;
+  const { type, page: pageParam } = await params;
+  const page = parseInt(pageParam, 10) || 1;
   const path = TYPE_TO_PATH[type];
 
   if (!path) {

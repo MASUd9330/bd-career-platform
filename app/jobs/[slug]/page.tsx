@@ -20,8 +20,9 @@ async function getJobPost(slug: string) {
   return { post, details, org: org ?? null };
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const data = await getJobPost(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const data = await getJobPost(slug);
   if (!data) return {};
 
   return {
@@ -36,8 +37,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default async function JobDetailPage({ params }: { params: { slug: string } }) {
-  const data = await getJobPost(params.slug);
+export default async function JobDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const data = await getJobPost(slug);
   if (!data || data.post.status === "rejected" || data.post.status === "draft") {
     notFound();
   }
