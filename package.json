@@ -14,7 +14,8 @@
     "publish:pending": "tsx scripts/publish.ts",
     "expire:jobs": "tsx scripts/expire.ts",
     "remind:deadlines": "tsx scripts/deadline-reminders.ts",
-    "seed:sources": "tsx scripts/seed-sources.ts"
+    "seed:sources": "tsx scripts/seed-sources.ts",
+    "reset:raw": "tsx scripts/reset-raw-contents.ts"
   },
   "dependencies": {
     "next": "^15.0.0",

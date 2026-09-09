@@ -59,12 +59,15 @@ async function processOneEntry(
   }
 
   // Persist raw content for audit trail, regardless of what happens next
-  await db.insert(rawContents).values({
-    sourceId: source.id,
-    sourceUrl: extracted.sourceUrl,
-    extractedText: extracted.text,
-    contentHash,
-  });
+  const [insertedRaw] = await db
+    .insert(rawContents)
+    .values({
+      sourceId: source.id,
+      sourceUrl: extracted.sourceUrl,
+      extractedText: extracted.text,
+      contentHash,
+    })
+    .returning({ id: rawContents.id });
 
   if (adapter.contentType !== "job") {
     console.log(`  Content type "${adapter.contentType}" pipeline not wired yet — raw content saved only.`);
@@ -80,8 +83,14 @@ async function processOneEntry(
 
   if (!extraction) {
     console.error(`  Gemini extraction failed: ${error}`);
+    await db
+      .update(rawContents)
+      .set({ processingError: (error || "unknown error").slice(0, 1000) })
+      .where(eq(rawContents.id, insertedRaw.id));
     return;
   }
+
+  await db.update(rawContents).set({ processed: true }).where(eq(rawContents.id, insertedRaw.id));
 
   // Step 3: fuzzy duplicate check by title/org (catches mirrors across sources)
   const likelyDupPostId = await findLikelyDuplicatePost({

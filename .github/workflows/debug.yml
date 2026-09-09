@@ -14,6 +14,15 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+      - name: Reset raw contents (testing only)
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: npm run reset:raw
+      - name: Run crawl pipeline
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npm run collect
       - name: Dump DB status
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
